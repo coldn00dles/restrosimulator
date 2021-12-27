@@ -1,12 +1,18 @@
 import random
+import os
+from dotenv import load_dotenv
 
+load_dotenv()
+
+user = os.getenv("user")
+pass = os.getenv("pass")
 from datetime import datetime,timedelta
 from datetime import date
 
 
 import mysql.connector
 
-mydb = mysql.connector.connect(host="localhost", user="root", passwd="mypass", database="restdb")
+mydb = mysql.connector.connect(host="localhost", user=user, passwd=pass, database="restdb")
 
 mycursor = mydb.cursor()
 mainmenureturn = ""
