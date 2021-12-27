@@ -1,4 +1,4 @@
-# restrosimulator
+# CLI Based Restaurant Simulator
 A project that I made in class 12th for my final exams.
 
 It uses MySQL for backend
